@@ -34,12 +34,17 @@ class _SplashScreenState extends State<SplashScreen> {
             ),
             SizedBox(height: 20),
             Text(
-              'Welcome to smartfarm',
+              'Welcome to SmartFarm',
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
                 color: Colors.black,
               ),
+            ),
+            SizedBox(height: 40),
+            LinearProgressIndicator(
+              valueColor: AlwaysStoppedAnimation<Color>(Colors.green), // Customize the color of the loading bar
+              backgroundColor: Colors.grey[200], // Set background color
             ),
           ],
         ),
